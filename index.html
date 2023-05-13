@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Momentum App</title>
+</head>
+<body>
+    <div class="container">
+        <h2 id="clock">00:00</h2>
+        <form id="login-form" class="hidden">
+            <input required maxlength="15" type="text" placeholder="what is your name?"> <!-- maxlength지정해버리기 (15글자이상 입력 못하게-->
+            <input type="submit" value="Log In">        
+        </form>
+        <h1 id="greeting" class="hidden"></h1> <!--form이 사라지면 그때 나타나게 해줄거임 default 상태: hidden-->
+    </div>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/background.js"></script>
+</body>
+</html>
