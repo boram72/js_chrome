@@ -16,12 +16,25 @@ styleElement.textContent = `
     padding: 0; /* 기본 패딩 제거 */
   }
 
-  body {
+  .container::after {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('img/${chosenImage}');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     background-position: center center;
+    opacity:0.7;
+    z-index: -1;
   }
+
 `;
+/*top,left: position: absolute 일때 시작점*/
 
 document.head.appendChild(styleElement);
+
+
+

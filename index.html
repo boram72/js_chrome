@@ -9,15 +9,35 @@
 </head>
 <body>
     <div class="container">
-        <h2 id="clock">00:00</h2>
-        <form id="login-form" class="hidden">
-            <input required maxlength="15" type="text" placeholder="what is your name?"> <!-- maxlength지정해버리기 (15글자이상 입력 못하게-->
-            <input type="submit" value="Log In">        
-        </form>
-        <h1 id="greeting" class="hidden"></h1> <!--form이 사라지면 그때 나타나게 해줄거임 default 상태: hidden-->
+        <div id="memo">
+            <textarea class="hidden"></textarea>
+            <p id="savememo"></p>
+        </div>
+        <div id="contents">
+            <span id="quote">
+                <button></button>
+            </span>
+
+            <h2 id="clock">00:00</h2>
+            <div class = "login-greeting">
+                <form id="login-form" class="hidden">
+                    <input required maxlength="15" type="text" placeholder="your name"> <!-- maxlength지정해버리기 (15글자이상 입력 못하게-->
+                    <input type="submit" value="">        
+                </form>
+                <h1 id="greeting" class="hidden"></h1> <!--form이 사라지면 그때 나타나게 해줄거임 default 상태: hidden-->   
+            </div>
+
+            <form id="todo-form">
+                <input type="text" placeholder="write a To-Do list" required>
+            </form> 
+            <ul id="todo-list"></ul>
+
+            <script src="js/greeting.js"></script>
+            <script src="js/clock.js"></script>
+            <script src="js/quotes.js"></script>
+            <script src="js/background.js"></script>
+            <script src="js/todo.js"></script>
+        </div>
     </div>
-    <script src="js/greeting.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/background.js"></script>
 </body>
 </html>

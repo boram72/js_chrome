@@ -12,7 +12,7 @@ function getClock(){
 //string.padStart(2,"0") : string의 길이를 2로 만드는데, 2가 아니라면 앞에 0을 채운다
 //string.padEnd(2,"0") : 뒤를 0으로 채운다
 
-getClock()
+getClock() // 젤 처음 실행할때 실행되어야하니까 즉시실행 후 인터벌로 실행
 setInterval(getClock,1000); // (interval : 몇시간 간격으로 계속 일어나야 하는 것 (function,milli seconds)
 
 //setTimeout(sayHello,5000); // 얘는 얼마나 기다렸다가 함수를 실행할지  
