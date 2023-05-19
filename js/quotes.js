@@ -133,6 +133,7 @@ function clearMemo(event){
         buttonX.classList.add(HIDDEN);
         buttonChk.classList.add(HIDDEN);
         localStorage.removeItem(MEMO_KEY);
+        buttonChk.innerText = "✔";
     }
 
     // const siblingElements = Array.from(event.target.parentElement.children); // 형제요소를 다 찾음 [textarea,button,button]
