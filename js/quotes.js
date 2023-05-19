@@ -73,9 +73,13 @@ function hidememo(){
     }, 10);
 }
 
+
+const BTNORIGINSTATE="2px 2px 4px rgba(0, 0, 0, 0.5)";
 function quotebtn(){
     
     buttonChk.innerText = "✔";
+    quote.addEventListener("mouseover",function(event){event.target.style.boxShadow = `inset ${BTNORIGINSTATE}`;});
+    quote.addEventListener("mouseout",function(event){event.target.style.boxShadow = "none";});
     quote.addEventListener("click",function(){
 
         if(memopad.classList.contains(HIDDEN)){
@@ -111,6 +115,9 @@ if(savedMemo!=null){
     }
     loadMemo(savedMemo);
 }
+
+
+
 // 여기서부터는 메모기능 구현할거임
 
 
